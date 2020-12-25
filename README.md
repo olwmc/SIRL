@@ -1,7 +1,7 @@
 ## SIRL
 Simple infomation relation language
 
-SIRL is a simple syntax for describing relationships between strings. Much like a decision diagram.
+SIRL is a simple syntax for describing relationships between strings. Much like a decision diagram or flow chart.
 
 SIRL takes files in the format
 
