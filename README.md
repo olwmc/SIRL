@@ -7,7 +7,7 @@ SIRL takes files in the format
 
 ```
 # Root node
-(ROOT | Root Node)			   => child1, child2, child3
+(ROOT | Root Node)              => child1, child2, child3
 
 # Children
 (child1 | This is child 1)		=> terminal
