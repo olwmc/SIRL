@@ -1,0 +1,28 @@
+# ROOT
+(ROOT | Do I want a doughnut?)		=> yes_want, no_want
+
+# Yes/No want donut
+(yes_want | Yes)			=> deserve?
+(no_want  | No)				=> T_maybe_apple
+
+# Do i deserve it?
+(deserve?    | Do I deserve it?)	=> yes_deserve, no_deserve
+(yes_deserve | Yes)			=> sure?
+(no_deserve  | No)			=> is_it_good?
+
+# Are you sure you deserve the donut?
+(sure?    | Are you sure?)		=> yes_sure, no_sure
+(yes_sure | Yes)			=> T_get_it
+(no_sure  | No)				=> T_jumping_jacks
+
+# Is the donut good?
+(is_it_good? | Is it a good donut)	=> yes_good, no_good
+(yes_good    | Yes)			=> T_grab_now
+(no_good     | No)			=> T_wait
+
+# Terminals
+(T_maybe_apple   | Maybe you want an apple?)	     => END 
+(T_get_it        | Get it)                           => END 
+(T_jumping_jacks | Do jumping jacks first)           => END
+(T_grab_now      | Don't wait! Grab it!)             => END
+(T_wait          | Wait until you find a better one) => END
