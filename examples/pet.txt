@@ -1,0 +1,71 @@
+# Root
+(ROOT | Which pet should you get?) => type?
+
+# Companion
+(type? | Are you looking for a companion or a roommate?) => companion, roommate
+(companion | Companion) => T_dog
+(roommate  | Roommate)  => mind_shed?
+
+# Do you mind shedding?
+(mind_shed? | Do you mind having to clean up shedded fur?) => yes_care, no_care
+(yes_care   | Yes) => how_many_legs
+(no_care    | No) => stench_level
+
+# Stench level
+(stench_level | What's your stench comfort level?) => minimal_stink, okay_stink
+(minimal_stink | Minimal) => scratch_or_bitten
+(okay_stink    | Not important) => T_ferret
+
+# Scratch or bite
+(scratch_or_bitten | Would you rather be scratched or bitten?) => both, bitten
+(both | Both) => T_cat
+(bitten | Bitten) => T_rabbit
+
+# How many legs
+(how_many_legs | How many legs can you handle?) => 0_legs, 2_legs, 4_legs, many_legs
+(0_legs | 0) => burying_mice
+(2_legs | 2) => T_bird
+(4_legs | 4) => hot_or_cold
+(many_legs | Many) => T_tarantula
+
+# Feel about mice?
+(burying_mice   | How do you feel about buyring dead mice every month?) => cool_with_mice, no_mice
+(cool_with_mice | Fine) => T_snake
+(no_mice	| Not good)  => T_fish
+
+# Hot blodded or cold blodded
+(hot_or_cold  | Hot or cold-blooded?) => hot_blooded, cold_blooded
+(hot_blooded  | Hot) => tail_preference
+(cold_blooded | Cold) => hurry?
+
+# Tail preference
+(tail_preference | What's your tail preference?) => no_tail, long_tail, giant_tail
+(no_tail    | No tail) => spikes?
+(long_tail   | Long and fuzzy) => T_gerbil
+(giant_tail | Giant tail) => T_rat
+
+# Spikes?
+(spikes? | Spikes?) => yes_spike, no_spike
+(yes_spike | Yeah) => T_hedgehog
+(no_spike  | Yikes!) => T_hamster
+
+# Are you in a hurry to get a pet?
+(hurry? | Are you in a hurry to get a pet?) => no_hurry, yes_hurry
+(no_hurry  | Nah) => T_turtle
+(yes_hurry | Yeah!) => T_lizard
+
+# Terminals
+(T_dog       | Your pet is: Dog!) => END
+(T_cat       | Your pet is: Cat!) => END
+(T_rabbit    | Your pet is: Rabbit!) => END
+(T_ferret    | Your pet is: Ferret!) => END
+(T_snake     | Your pet is: Snake!) => END
+(T_fish      | Your pet is: Fish!) => END
+(T_bird      | Your pet is: Bird!) => END
+(T_tarantula | Your pet is: Tarantula!) => END
+(T_turtle    | Your pet is: Turtle!) => END
+(T_lizard    | Your pet is: Lizard!) => END
+(T_hedgehog  | Your pet is: Hedgehog!) => END
+(T_hamster   | Your pet is: Hamster!) => END
+(T_gerbil    | Your pet is: Gerbil!) => END
+(T_rat       | Your pet is: Rat!) => END
