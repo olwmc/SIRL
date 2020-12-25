@@ -1,18 +1,18 @@
 ## SIRL
 Simple infomation relation language
 
-SIRL is a simple syntax for describing relationships between strings. Much like a decision diagram.
+SIRL is a simple syntax for describing hierarchical relationships between strings. Much like a decision diagram or flow chart.
 
 SIRL takes files in the format
 
 ```
 # Root node
-(ROOT | Root Node)			    => child1, child2, child3
+(ROOT | Root Node)              => child1, child2, child3
 
 # Children
-(child1 | This is child 1)		=> terminal
-(child2 | This is child 2)		=> terminal
-(child3 | This is child 3)		=> terminal
+(child1 | This is child 1)      => terminal
+(child2 | This is child 2)      => terminal
+(child3 | This is child 3)      => terminal
 
 # Terminal
 (terminal | This is a terminal)		=> END

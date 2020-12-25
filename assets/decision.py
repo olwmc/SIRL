@@ -2,13 +2,6 @@ from SIRL import *
 
 chart = make_flow(read_chart("donut.txt"))
 
-import json
-#print(json.dumps(chart, indent=4))
-
-"""
-Check if it has a string, if it does, go to the next subarray
-"""
-
 def do_paths(chart):
     # Keys of the chart
     keys = chart.keys()
