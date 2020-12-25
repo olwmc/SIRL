@@ -29,7 +29,7 @@
 (many_legs | Many) => T_tarantula
 
 # Feel about mice?
-(burying_mice   | How do you feel about buyring dead mice every month?) => cool_with_mice, no_mice
+(burying_mice   | How do you feel about burying dead mice every month?) => cool_with_mice, no_mice
 (cool_with_mice | Fine) => T_snake
 (no_mice	| Not good)  => T_fish
 
